@@ -1,0 +1,34 @@
+<!-- Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT License. -->
+<!-- This file shows how to design a first-run page that provides a welcome screen to the user about the features of the add-in. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sarah Script</title>
+
+    <!-- Office JavaScript API -->
+    <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+
+    <!-- Template styles -->
+    <link href="taskpane.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="ms-font-m ms-welcome ms-Fabric">
+    <header class="ms-welcome__header ms-bgColor-neutralLighter">
+        <img class="profile-img" width="140" height="140" src="../../assets/hi.jpg" alt="hi" title="hi" />
+        <h1 class="ms-font-su profile-name">Hi Sarah</h1>
+    </header>
+    <main id="app-body" class="ms-welcome__main" style="display: none;">
+        <h2 class="ms-font-xl"> Let's get your colour on! </h2>
+        <div role="button" id="run" class="ms-welcome__action ms-Button ms-Button--hero ms-font-xl squircle">
+            <span class="ms-Button-label">GO</span>
+        </div>
+        <p><label id="item-subject"></label></p>
+    </main>
+</body>
+
+</html>
